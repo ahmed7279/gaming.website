@@ -1,0 +1,505 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+<title>cyper</title>
+<meta charset="utf-8">
+
+
+<style>
+body{
+margin:0px;
+padding:0px;
+}
+*{
+font-family:arial;
+}
+.maincontent{
+height:800px;
+
+background-image: url('photo/background.jpg');
+background-repeat:no-repeat;
+background-size:cover;
+
+}
+.navbar{
+display:flex;
+justify-content: center;
+align-items: center;
+background: rgba(0, 0, 0, 0.6);
+
+}
+.navbar a {
+color:white;
+margin: 20px;
+}
+.navbar a.join{
+padding: 10px;
+border-radius: 8px;
+border: 2px solid white;
+background-color: transparent;
+color:white;
+}
+.details{
+padding-top:150px;
+text-align:center;
+color:white;
+}
+.details button{
+padding: 10px;
+border-radius: 8px;
+border: 2px solid white;
+background-color: white;
+color:darkturquoise;
+}
+ .upcoming h1{
+text-align: center;
+}
+.games{
+display: flex;
+width:60%;
+margin:auto;
+justify-content: space-around;
+align-items: center;
+}
+.game{
+text-align: center;
+}
+.game .img {
+width: 120px;
+height: 120px;
+border-radius: 120px;
+background-image: url('photo/PUBG.jfif');
+background-size: cover;
+background-position: center; 
+}
+.game2 .img{
+background-image: url('photo/gta.jpg');
+}
+.game3 .img{
+background-image: url('photo/callofduty.jpg');
+}
+.game4 .img{
+background-image: url('photo/batman.jpg');
+}
+.maingame{
+display:flex;
+justify-content:center;
+align-items: center;
+width:700px;
+margin:auto;
+background-color:black;
+color:white;
+padding:50px;
+border-radius: 20px;
+margin-top: 50px;
+line-height: 20px;
+}
+.maingame button{
+padding: 10px;
+border-radius: 8px;
+border: 2px solid white;
+background-color: aqua;
+color:white;
+border: none;
+}
+.maingame img{
+margin-right: -100px;
+border-radius: 20px;
+} 
+.postscontent h1, .postscontent p{
+text-align: center;
+
+}
+.posts{
+display: flex;
+width:60%;
+margin:auto;
+justify-content: space-around;
+align-items: center;
+}
+.post{
+margin: 25px;
+background-color: black;
+color:white;
+border-radius: 8px;
+}
+.post p{
+font-size: 15px;
+text-align: left;
+}
+div.post p, div.post h5{
+display: inline-block;
+}
+div.post h3, div.post p, div.post h5{
+padding-right: 10px;
+padding-left: 10px;
+}
+div.post1 div.img, div.post2 div.img{
+background-image: url('photo/post1.jpg');
+height: 200px;
+background-position: center;
+background-size: cover;
+border-radius: 8px;
+}
+div.post2 div.img{
+background-image: url('photo/post2.jpg');
+}
+.testis{
+
+display: flex;
+width:50%;
+margin:auto;
+justify-content: space-around;
+align-items: center;
+}
+.test h1{
+text-align: center;
+margin-bottom: 80px;
+}
+.testi{
+margin: 20px;
+text-align: center;
+background-color: black;
+color: white;
+border-radius: 8px; 
+}
+div.testi div.img{
+
+width: 100px;
+background-color: white;
+height: 100px;
+margin:auto;
+border-radius:100px;
+margin-top: -50px;
+background-image: url('photo/young-man.png');
+background-size: cover;
+background-position: center;
+border: 1px solid black;
+}
+
+
+
+.testi1 .img{
+height: 80px;
+background-image: url('photo/girl.png');
+}
+.testi2 .img{
+height: 80px;
+background-image: url('photo/young-man.png');
+}
+
+.joinform{
+display:flex;
+justify-content:center;
+margin:auto;
+margin: top;
+width:60%;
+border: 1px solid black;
+border-radius: 10px;
+}
+.joinform .form, .joinform .image{
+width: 35%;
+}
+.joinform .form{
+width:65%;
+
+}
+ .joinform .image{
+background-image: url('photo/wallpaperflare.com_wallpaper.jpg');
+background-size: cover;
+background-position: top;
+height: 400;
+padding: 15;
+border-top-left-radius: 10px;
+border-button-left-radius: 10px;
+} 
+form input, form button{
+padding: 10px;
+font-size: 10px;
+border: 1px soild aqua;
+border-radius: 5px;
+display: block;
+margin: 10px;
+}
+form{
+width:60%;
+margin: auto;
+display: flex;
+flex-direction: column;
+padding-top: 100px;
+}
+form button{
+background-color: blue;
+color: white;
+}
+
+
+.footer{
+
+  color: white;
+  background-color: green;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+
+.pricing h2{
+
+text-align: center;
+
+}
+
+.prices{
+
+display: flex;
+justify-content: center;
+width: 60%;
+margin: auto;
+text-align: center;
+}
+
+.price{
+
+width: 30%;
+background-color: blueviolet;
+color: white;
+margin: 8px;
+padding-bottom: 15px;
+padding-top: 15px;
+border-radius: 8px;
+
+}
+
+.price button{
+
+  padding: 10px;
+border-radius: 8px;
+border: 2px solid white;
+background-color: transparent;
+color:white;
+border: none;
+border: 1px solid white;
+  
+}
+
+.planprice{
+background-color: darkblue;
+padding-bottom: 10px;
+padding-top: 10px;
+
+}
+.planprice h3{
+
+margin: 0px;
+
+}
+
+
+
+</style>
+
+
+</head>
+
+<body>
+
+<div class="maincontent"> 
+<div class="navbar">
+<img src="photo/logo gaming.png" width="60px;">
+<a>HOMEPAGE</a>
+<a>GALLERY</a>
+<a>GAMES</a>
+<a>NEWS</a>
+<a>CONTACT</a>
+
+<a>CONTACTS</a>
+<a href="join.html" class="JOINn">JOIN US NOW</a>
+</div>
+
+<div class="details">
+<h3>WELCOME TO GAMEPLAY</h3>
+<h1>ONLINE GAMING SITE</h1>
+<p>Hello and welcome to my website. it has a lot of amazing games</p>
+<button>MORE ABOUT US</button>
+
+</div>
+</div>
+
+<div class="upcoming">
+<h1>Upcoming Games</h1>
+<div  class="games">
+ <div  class="game">
+  <div  class="img"></div>
+  <h5>pupg mobile</h5>
+   <p>may - 2023</p>
+ 
+ 
+ </div><div  class="game game2">
+   <div  class="img"></div>
+  <h5>gta</h5>
+   <p>may - 2023</p>
+ 
+ 
+ </div><div  class="game game3">
+   <div  class="img"></div>
+  <h5>call of duty</h5>
+   <p>may - 2023</p>
+ 
+ 
+ </div><div  class="game game4">
+   <div  class="img"></div>
+  <h5>batman</h5>
+   <p>may - 2023</p>
+ 
+ 
+ </div>
+ </div>
+ 
+</div>
+
+<div  class="maingame">
+    <div class="gamedatails">
+	<h3>eFootball</h3>
+	<p>eFootball formerly known as Pro Evolution Soccer worldwide and Winning Eleven in Japan, is a football simulation video game series developed and published by Konami since 1995. It consists of eighteen main parts and several spin-off titles released on many different platforms. The series has been a consistent critical and commercial success</p>
+	<button>READ MORE</button>
+	</div>
+	<img src="photo/Efootball 2024.jfif" width="50%" >
+ </div>
+ </div>
+  
+  <div  class="postscontent">
+   <h1>Our latest posts</h1>
+   <p>These are the latest posts and updates that make the performance even better</p>
+    <div  class="posts">
+	 <div  class="post post1">
+	  <div  class="img"></div>
+	  <h3>A new update is available now for pupg mobile <h3>
+	  
+	  <p>A new update is available now for pupg mobile. You can download it now, hurry up and compete with your friends</p>
+	  <hr>
+	  <h5>Ahmed sedawy<h5>
+	  <p>82 comments</p>
+	 </div><div  class="post post2">
+	  <div  class="img"></div>
+	  <h3>A new update is available now for pupg mobile <h3>
+	  
+	  <p>A new update is available now for pupg mobile. You can download it now, hurry up and compete with your friends</p>
+	  <hr>
+	  <h5>Ahmed sedawy<h5>
+	  <p>82 comments</p>
+	 </div>
+	</div>
+  </div>
+  
+
+  <div class="pricing">
+    <h2>Our pricing plans</h2>
+    <div class="prices">
+    <div class="price">
+      <h4>Golden plans</h4>
+      <div class="planprice">
+
+        <h3>89 LE</h3>
+        per mounth
+      </div>
+       <div class="plandatails">
+        <p>50 giga download</p>
+        <hr>
+        <p>5 games</p>
+        <hr>
+        <p>online</p>
+
+       </div>
+      <button>buy plan now</button>
+
+    </div>
+    <div class="price">
+      <h4>Golden plans</h4>
+      <div class="planprice">
+
+        <h3>89 LE</h3>
+        per mounth
+      </div>
+       <div class="plandatails">
+        <p>50 giga download</p>
+        <hr>
+        <p>5 games</p>
+        <hr>
+        <p>online</p>
+
+       </div>
+      <button>buy plan now</button>
+
+    </div>
+    <div class="price">
+      <h4>Golden plans</h4>
+      <div class="planprice">
+
+        <h3>89 LE</h3>
+        per mounth
+      </div>
+       <div class="plandatails">
+        <p>50 giga download</p>
+        <hr>
+        <p>5 games</p>
+        <hr>
+        <p>online</p>
+
+       </div>
+      <button>buy plan now</button>
+
+    </div>
+
+
+  </div>
+  </div>
+  
+
+  
+  
+  <div  class="test">
+  
+  <h1>Testimonials</h1>
+  <div  class="testis">
+   <div  class="testi">
+    <div class="img"></div>
+   <h5>Gamer<h5>
+   <p>Hi, this website is very interesting and has a lot of amazing games.</p>
+   
+  </div> <div  class="testi">
+    <div class="img"></div>
+   <h5>Gamer<h5>
+   <p>Hi, this website is very interesting and has a lot of amazing games.</p>
+   
+  </div>
+  </div>  
+  
+  </div>
+  
+  <div class="footer">
+    
+    <p>This website is created by AHMED SEDAWY </p>
+
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</body>
+
+
+
+
+
+
+</html>
